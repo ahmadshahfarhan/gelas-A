@@ -1,6 +1,7 @@
 import { useState, useRef } from "react";
 import panahleft from "../../assets/svg/panahleft.svg";
 import panahright from "../../assets/svg/panahright.svg";
+import halal from "../../assets/svg/halal.svg";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import {
@@ -35,12 +36,12 @@ const Jumbotron = ({ Marquee }) => {
           spaceBetween={0}
           slidesPerView={1}
           loop={true}
-          //   effect="fade"
-          speed={2500}
+          // effect="fade"
+          // speed={2500}
           thumbs={{ swiper: thumbsSwiper }}
           modules={[Thumbs, Navigation, Autoplay, EffectFade]}
-          autoplay={{ delay: 250 }}
-          className="main-slider mt-[-30px] mx-auto"
+          autoplay={{ delay: 2500 }}
+          className="main-slider mt-[-30px] mx-auto max-w-[480px]"
         >
           {HomeProduk.map((item, index) => (
             <SwiperSlide key={index}>
@@ -54,8 +55,9 @@ const Jumbotron = ({ Marquee }) => {
         </Swiper>
 
         <div className="bg-[#00000078] h-[530px] w-[530px] rounded-full absolute left-1/2 top-[360px] -translate-x-1/2 -translate-y-1/2"></div>
+        <img className=" absolute top-[550px] z-20 left-1/2  -translate-x-[230px] -translate-y-1/2 rotate-[20deg]" src={halal} alt="gelas A" />
         <div className=" relative">
-          <h1 className=" absolute max-w-[200px] bottom-0 top-[-560px] base-white-text leading-[17px] left-1/9">
+          <h1 className=" absolute max-w-[200px] bottom-0 top-[-560px] base-white-text leading-[17px] left-1/9 description-font">
             zero waste, 100% dari bahan-bahan kue kering, seruput minum, gigit
             gelasnya!
           </h1>
