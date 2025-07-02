@@ -4,7 +4,7 @@ const marquee = () => {
   return (
     <>
       <div className="overflow-hidden whitespace-nowrap bg-[#ffb91e] py-5 w-full absolute top-[330px] rotate-[3deg] z-20">
-        <div className=" animate-marquee flex w-max items-center gap-x-12 hover:[animation-play-state:paused]">
+        <div className=" animate-marqueeHome flex w-max items-center gap-x-12 hover:[animation-play-state:paused]">
           {items.map((item, index) => (
             <h1
               key={`top-${index}`}
