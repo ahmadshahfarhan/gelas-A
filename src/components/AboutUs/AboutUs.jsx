@@ -2,6 +2,9 @@ import Element1 from "../../assets/svg/cup.svg";
 import Element2 from "../../assets/svg/animes.svg";
 import Element3 from "../../assets/svg/panahleft.svg";
 import Element4 from "../../assets/svg/gelasmakan.svg";
+import Element5 from "../../assets/svg/kamera.svg";
+
+import { SpinningText } from "../../Ui/AboutUs/Spinning";
 
 const AboutUs = () => {
   const child = Array.from({ length: 8 }, () => "edible cup");
@@ -11,7 +14,7 @@ const AboutUs = () => {
         <h1
           key={index}
           className={`uppercase text-8xl text-center title-font text-[#dedada35] px-1
-             ${index % 2 === 0 ? "text-[#dedada01]" : "text-[#dedada03]"}`}
+             ${index % 2 === 0 ? "text-[#dedada90]" : "text-[#dedada90]"}`}
         >
           {items}
         </h1>
@@ -23,12 +26,8 @@ const AboutUs = () => {
       <div className="">
         <div className=" flex justify-between items-center mx-auto mt-6">
           <div className=" relative">
-            <img
-              className=" w-[267px] h-[350px] rotate-[12deg] z-10 relative"
-              src={Element1}
-              alt="gelas A"
-            />
-            <div className=" bg-[#14463a8c] h-[360px] w-[360px] rounded-full absolute top-0 right-0 left-[-140px]"></div>
+            <img className="z-10 relative" src={Element5} alt="gelas A" />
+            <div className=" bg-[#14463a8c] h-[320px] w-[320px] rounded-full absolute top-[-20px] right-0 left-[-140px]"></div>
           </div>
           <div className=" flex-col relative">
             <h1 className=" uppercase title-font text-8xl text-[#14463a]">
@@ -54,7 +53,7 @@ const AboutUs = () => {
           </div>
         </div>
         <div className=" relative">
-          <div className="mt-[-40px] relative -z-10 max-w-[600px] overflow-hidden mx-auto p-5">
+          <div className="mt-[-20px] relative -z-10 max-w-[600px] overflow-hidden mx-auto p-5">
             {[...Array(2)].map((_, index) => (
               <div
                 key={index}
@@ -73,11 +72,14 @@ const AboutUs = () => {
               </div>
             ))}
           </div>
-          <img
-            className="absolute top-[-30px] rotate-[8deg] left-1/2 transform -translate-x-1/2 w-[200px]"
-            src={Element4}
-            alt=""
-          />
+          <SpinningText
+            reverse
+            duration={12}
+            radius={6}
+            className=" text-2xl uppercase absolute top-[75px] left-1/2 transform -translate-x-1/2 text-[#14463a] font-bold"
+          >
+            gelas A gelas A gelas A gelas A
+          </SpinningText>
         </div>
       </div>
     </>

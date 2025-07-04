@@ -23,7 +23,7 @@ const Jumbotron = ({ Marquee }) => {
   const [thumbsSwiper, setThumbsSwiper] = useState(null);
   const mainSwiperRef = useRef(null);
   const StyleJumbotron =
-    "title-font text-[140px] leading-[110px] uppercase base-white-text";
+    "title-font text-[60px] sm:text-[80px] md:text-[100px] lg:text-[139px] leading-[60px] md:leading-[80px] lg:leading-[110px] uppercase base-white-text";
   return (
     <>
       <div className=" text-center pt-[110px]">
@@ -46,7 +46,7 @@ const Jumbotron = ({ Marquee }) => {
           {HomeProduk.map((item, index) => (
             <SwiperSlide key={index}>
               <img
-                className="mx-auto rotate-[8deg]  relative z-10"
+                className="mx-auto rotate-[8deg] relative z-10 w-[320px] sm:w-auto lg:w-auto"
                 src={item.img}
                 alt={item.title}
               />
