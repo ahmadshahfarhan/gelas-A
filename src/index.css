@@ -8,6 +8,14 @@
   @apply bg-[#fbeee5];
 }
 
+.base-green-text {
+  @apply text-[#14463a]
+}
+
+.base-green-bg {
+  @apply bg-[#14463a]
+}
+
 .container {
   @apply pl-12 pr-12 mx-auto;
 }

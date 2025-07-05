@@ -10,7 +10,9 @@ const Navbar = () => {
             <li>Testimoni</li>
             <li>Produk</li>
           </ul>
-          <button className=" text-black font-semibold text-[15px] base-white-bg py-2 px-5 rounded-4xl">Order Now</button>
+          <button className=" text-black font-semibold text-[15px] base-white-bg py-2 px-5 rounded-4xl">
+            Order Now
+          </button>
         </div>
       </div>
     </>

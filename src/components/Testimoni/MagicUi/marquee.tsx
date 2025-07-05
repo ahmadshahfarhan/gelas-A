@@ -59,7 +59,7 @@ const ReviewCard = ({
     <figure
       className={cn(
         "relative h-full w-64 cursor-pointer overflow-hidden rounded-xl border p-4",
-        "border-[#14463a]/[.4]",
+        "border-[#14463a]/[.4]"
       )}
     >
       <div className="flex flex-row items-center gap-2">
@@ -72,7 +72,7 @@ const ReviewCard = ({
         </div>
       </div>
       <blockquote className="mt-2 text-sm">{body}</blockquote>
-    </figure>   
+    </figure>
   );
 };
 

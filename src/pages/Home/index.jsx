@@ -4,6 +4,7 @@ import Marquee from "../../components/Home/marquee";
 import Jumbotron from "../../components/Home/jumbotron";
 import AboutUs from "../../components/AboutUs/AboutUs";
 import Testimoni from "../../components/Testimoni/Testimoni";
+import Produk from "../../components/Produk/Produk";
 
 const Home = () => {
   return (
@@ -35,6 +36,8 @@ const Home = () => {
       </div>
       <AboutUs />
       <Testimoni />
+      <Produk />
+      
     </>
   );
 };
