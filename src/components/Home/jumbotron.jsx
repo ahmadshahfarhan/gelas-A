@@ -23,7 +23,7 @@ const Jumbotron = ({ Marquee }) => {
   const [thumbsSwiper, setThumbsSwiper] = useState(null);
   const mainSwiperRef = useRef(null);
   const StyleJumbotron =
-    "title-font text-[60px] sm:text-[80px] md:text-[100px] lg:text-[139px] leading-[60px] md:leading-[80px] lg:leading-[110px] uppercase base-white-text";
+    "title-font text-[52px] sm:text-[80px] md:text-[100px] lg:text-[139px] leading-[40px]  sm:leading-[60px] md:leading-[80px] lg:leading-[110px] uppercase base-white-text";
   return (
     <>
       <div className=" text-center pt-[110px]">
@@ -46,7 +46,7 @@ const Jumbotron = ({ Marquee }) => {
           {HomeProduk.map((item, index) => (
             <SwiperSlide key={index}>
               <img
-                className="mx-auto rotate-[8deg] relative z-10 w-[320px] sm:w-auto lg:w-auto"
+                className="mx-auto rotate-[8deg] relative z-10 w-[280px] sm:w-auto lg:w-auto"
                 src={item.img}
                 alt={item.title}
               />
@@ -54,19 +54,19 @@ const Jumbotron = ({ Marquee }) => {
           ))}
         </Swiper>
 
-        <div className="bg-[#00000078] h-[530px] w-[530px] rounded-full absolute left-1/2 top-[360px] -translate-x-1/2 -translate-y-1/2"></div>
+        <div className="bg-[#00000078] w-[350px] h-[350px] md:h-[530px] md:w-[530px] rounded-full absolute left-1/2 top-[250px] md:top-[360px] -translate-x-1/2 -translate-y-1/2"></div>
         <img
           className=" absolute top-[550px] z-20 left-1/2  -translate-x-[230px] -translate-y-1/2 rotate-[20deg]"
           src={halal}
           alt="gelas A"
         />
         <div className=" relative">
-          <h1 className=" absolute max-w-[200px] bottom-0 top-[-560px] base-white-text leading-[17px] left-1/9 description-font">
+          <h1 className=" absolute max-w-[200px] bottom-0 top-[-560px] base-white-text leading-[17px] left-1/9 description-font hidden md:block">
             zero waste, 100% dari bahan-bahan kue kering, seruput minum, gigit
             gelasnya!
           </h1>
           <img
-            className=" absolute bottom-0 top-[-490px] left-[310px]"
+            className=" absolute bottom-0 top-[-490px] left-[310px] hidden md:block"
             src={panahleft}
             alt="gelas A"
           />
@@ -78,7 +78,7 @@ const Jumbotron = ({ Marquee }) => {
             slidesPerView={3}
             watchSlidesProgress
             modules={[Thumbs, Navigation]}
-            className="thumb-slider max-w-[200px] absolute bottom-0 top-[-490px] base-white-text left-1/3"
+            className="thumb-slider max-w-[200px] absolute bottom-0 top-[-300px] sm:top-[-400px] md:top-[-490px] base-white-text sm:left-0 md:left-1/3"
           >
             {HomeProduk.map((item, index) => (
               <SwiperSlide
@@ -97,7 +97,7 @@ const Jumbotron = ({ Marquee }) => {
           <img
             src={panahright}
             alt=""
-            className="absolute bottom-0 top-[-600px] right-[310px] rotate-[-34deg]"
+            className="absolute bottom-0 top-[-600px] right-[310px] rotate-[-34deg] hidden md:block"
           />
         </div>
         <Marquee />

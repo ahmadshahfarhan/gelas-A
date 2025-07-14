@@ -9,7 +9,7 @@ import Produk from "../../components/Produk/Produk";
 const Home = () => {
   return (
     <>
-      <div className=" bg-[#14463a] max-h-[700px]">
+      <div className=" bg-[#14463a] max-h-[600px] md:max-h-[700px]">
         <Jumbotron Marquee={Marquee} />
       </div>
       <div className=" mt-[150px] container mx-auto relative">

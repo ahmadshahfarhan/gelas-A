@@ -26,6 +26,9 @@ body {
   background-color: #fbeee5;
   overflow-x: hidden;
 }
+button {
+  cursor: pointer;
+}
 
 @layer utilities {
   @keyframes marqueeHome {
